@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Interview</title>
+</head>
+
+<body>
+<form action="#" th:action="@{/interview-create}" th:object="${interview}" method="post">
+    <label for="userId">First name</label>
+    <input type="text" th:field="*{userId}" id="userId" placeholder="User Id">
+    <label for="skills">Last name</label>
+    <input type="text" th:field="*{skills}" id="skills" placeholder="Skills">
+    <label for="communication">Last name</label>
+    <input type="text" th:field="*{communication}" id="communication" placeholder="communication">
+    <label for="intellect">Last name</label>
+    <input type="text" th:field="*{intellect}" id="intellect" placeholder="intellect">
+    <label for="passedDate">Last name</label>
+    <input type="date" th:field="*{passedDate}" id="passedDate" placeholder="passedDate">
+    <input type="submit" value="Create User">
+</form>
+</body>
+</html>

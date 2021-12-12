@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+<div th:switch="${interview}">
+    <h2 th:case="null">No interviews found!</h2>
+    <div th:case="*">
+        <h2>Interviews</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>User Id</th>
+                <th>Skills</th>
+                <th>Intellect</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="interview : ${interviews}">
+                <td th:text="${interview.id}"></td>
+                <td th:text="${interview.userId}"></td>
+                <td th:text="${interview.skills}"></td>
+                <td th:text="${interview.intellect}"></td>
+                <td th:text="${interview.passedDate}"></td>
+                <td><a th:href="@{interview-update/{id}(id=${interview.id})}">Edit</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <p><a href="/interview-create">Create interview</a></p>
+</div>
+</body>
+</html>
