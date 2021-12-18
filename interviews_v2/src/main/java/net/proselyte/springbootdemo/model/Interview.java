@@ -1,5 +1,7 @@
 package net.proselyte.springbootdemo.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -25,7 +27,4 @@ public class Interview {
 
     @Column(name = "intellect")
     private Integer intellect;
-
-    @Column(name = "passed_date")
-    private Date passedDate;
 }

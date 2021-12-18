@@ -22,10 +22,9 @@
             <tbody>
             <tr th:each="interview : ${interviews}">
                 <td th:text="${interview.id}"></td>
-                <td th:text="${interview.userId}"></td>
+                <td th:text="${interview.user.id}"></td>
                 <td th:text="${interview.skills}"></td>
                 <td th:text="${interview.intellect}"></td>
-                <td th:text="${interview.passedDate}"></td>
                 <td><a th:href="@{interview-update/{id}(id=${interview.id})}">Edit</a></td>
             </tr>
             </tbody>

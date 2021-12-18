@@ -1,2 +1,0 @@
-ru/dhabits/spring_boot_example/SpringBoot/ApplicationTests.java
- ru.dhabits.spring_boot_example.SpringBoot.ApplicationTests

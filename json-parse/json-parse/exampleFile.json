@@ -1,0 +1,18 @@
+{
+"id": 1,
+"firstname": "Ulad",
+"languages": [
+{
+"lang": "ru",
+"knowledge": "native"
+},
+{
+"lang": "en",
+"knowledge": "pre-intermediate"
+}
+],
+"job": {
+"site": "exadel",
+"name": "c#"
+}
+}
